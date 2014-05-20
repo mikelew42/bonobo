@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/bower_components/underscore/underscore.js"></script>
+    <script src="js/events.module.js"></script>
+    <script src="js/bonobo.js"></script>
+    <script src="js/html.js"></script>
+    <script src="js/json.js"></script>
+    <script>
+        window.bon = new MPL.Bonobo();
+
+        bon.addProperty('prop');
+        bon.prop = 5;
+
+        $(document).ready(function(){
+
+           window.div = new MPL.Element('div');
+            div.addAttribute('data-something', 'some value');
+            div.addAttribute('contenteditable', 'true');
+        });
+    </script>
+    <style>
+        * { margin: 0; padding: 0; }
+        body { padding: 20px; font-family: "Open Sans"; font-size: 14px; }
+
+        .element { background: #eee; margin-bottom: 12px;  }
+        .element .preview {}
+        .element .tag {  font-weight: bold; margin-right: 10px; background: #555; color: #fff; font-family: "Open Sans Condensed"; padding: 4px 12px; float: left; border-radius: 3px }
+        .element .attributes { padding: 5px 10px; }
+
+        .attribute { border-radius: 2px; font-size: 13px; margin-right: 10px; display: inline-block; background: #ddd; padding: 0px 4px; margin-top: 0px; }
+        .attribute .name { font-weight: bold; }
+        .attribute .value { }
+
+        .add-attribute { cursor: pointer; }
+
+
+        .template { display: none; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+<div><a href="index.html">index.html</a></div>
+<span class="add-attribute attribute template" id="add-attribute-view">+</span>
+<span class="attribute template" id="attribute-view">
+    <span class="name"></span>="<span class="value"></span>"
+</span>
+<div class="element template" id="element-view">
+    <div class="preview">
+        <div class="tag"></div>
+        <div class="attributes"></div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

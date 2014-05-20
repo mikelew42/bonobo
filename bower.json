@@ -1,0 +1,22 @@
+{
+  "name": "bonobo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mikelew42/bonobo",
+  "authors": [
+    "Michael Lewis <mike@lew42.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/js/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0"
+  }
+}
