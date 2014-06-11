@@ -3,6 +3,10 @@
 	if (typeof MPL !== "object")
 		MPL = {};
 
+	var Variable = MPL.Variable = function Variable(){
+		
+	};
+
 	var Property = MPL.Property = function Property(name){
 		var self = this;
 		this.name = name;

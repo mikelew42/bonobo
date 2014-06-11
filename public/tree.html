@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/bower_components/angular/angular.js"></script>
+    <script src="js/bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/bower_components/underscore/underscore.js"></script>
+    <script src="js/events.module.js"></script>
+    <script src="js/bonobo.js"></script>
+    <script src="js/tree.js"></script>
+    <script>
+
+    </script>
+    <style>
+        * { margin: 0; padding: 0; }
+        body { padding: 20px; font-family: "Verdana"; font-size: 14px; }
+        button { padding: 0px 6px;}
+
+        .clear { clear: both; }
+    </style>
+</head>
+<body ng-app="App" ng-controller="Ctrl">
+    <h1>Hello World</h1>
+    <div class="treeport">
+        <div class="tree">
+            <div ng-repeat="item in tree._children">{{item.name}}</div>
+        </div>
+        <div class="viewport"></div>
+    </div>
+    <input ng-show="showNewItem" ng-model="newItemName" ng-keypress="keypress($event)"><button ng-show="!showNewItem" ng-click="showNewItem = !showNewItem">+</button>
+</body>
+</html>
