@@ -6,19 +6,9 @@
     <script src="js/bower_components/underscore/underscore.js"></script>
     <script src="js/events.module.js"></script>
     <script src="js/bonobo.js"></script>
-    <script src="js/html.js"></script>
+    <script src="js/supermethod.js"></script>
     <script>
-        window.bon = new MPL.Bonobo();
 
-        bon.addProperty('prop');
-        bon.prop = 5;
-
-        $(document).ready(function(){
-
-           window.div = new MPL.Element('div');
-            div.addAttribute('data-something', 'some value');
-            div.addAttribute('contenteditable', 'true');
-        });
     </script>
     <style>
         * { margin: 0; padding: 0; }
@@ -41,18 +31,7 @@
     </style>
 </head>
 <body>
-<div><a href="json.html">json.html</a></div>
-<div><a href="supermethod.html">supermethod.html</a></div>
-<span class="add-attribute attribute template" id="add-attribute-view">+</span>
-<span class="attribute template" id="attribute-view">
-    <span class="name"></span>="<span class="value"></span>"
-</span>
-<div class="element template" id="element-view">
-    <div class="preview">
-        <div class="tag"></div>
-        <div class="attributes"></div>
-        <div class="clear"></div>
-    </div>
-</div>
+<div><a href="index.html">index.html</a></div>
+
 </body>
 </html>

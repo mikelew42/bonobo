@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('server', function(next){
-	var server = express().use(express.static( __dirname + '/public' )).listen(80, next);
+	var server = express().use(express.static( __dirname + '/public' )).listen(9876, next);
 	open("http://localhost/", "chrome");
 });
 
